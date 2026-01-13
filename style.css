@@ -14,12 +14,29 @@ html, body {
 
 .side-bar{
     background-color: pink;
+    display: grid;
     grid-row: 1/4;
     grid-column: 1/2;
+    grid-template-rows: 1fr 2fr 3fr;
+    padding: 20px;
+}
+
+.logo-container{
+    text-align: center;
 }
 
 ul{
     list-style-type: none;
+}
+
+li{
+    padding: 5px;
+}
+
+.profile-container{
+    grid-row: 2/3; 
+    text-align: left;
+    padding: 5px;
 }
 
 .nav-bar{
