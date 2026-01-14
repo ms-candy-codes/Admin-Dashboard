@@ -176,14 +176,70 @@ input{
     background-color: white;
     border-radius: 10px;
     font-size: 13px;
-    margin-top: 4.5rem;
+    margin-top: 0.3rem;
     padding: 1.5rem;
+    padding-bottom: 3rem;
     width: 230px;
     text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.announcement-title{
+    margin-top: 15%;
+    margin-bottom: 0;
 }
 
 hr{
     color: rgba(210, 210, 210, 0.056);
     width: 100%;
     margin: 0 auto;
+}
+
+.trending-section{
+    background-color: white;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.profiles{
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.5rem;
+    margin-left: 10%;
+    width: 260px;
+    text-align: left;
+}
+
+.info-holder{
+    margin: 0 auto;
+    padding: 0;
+    margin-right: 20%;
+}
+
+.description{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+.names{
+    font-size: 15px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.trending-title{
+    margin-top: 7%;
 }
