@@ -1,16 +1,20 @@
 html, body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     height: 100%;
     overflow-x: hidden;
 }
 
 .grid-container{
     display: grid;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100vw;
     background-color: blue;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.8fr 0.5fr 6fr;
+    /* grid-template-rows: 0.8fr 0.5fr 6fr; */
+    grid-template-rows: auto auto 1fr;
+
 }
 
 .side-bar{
@@ -130,13 +134,38 @@ input{
 .project-section{
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1/2;
-    grid-column: 1/2;
+    gap: 0.75rem;
+    align-content: start;
 }
 
 .project-section-info{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
+    grid-template-columns: repeat(2, 0.6fr);
+    gap: 3rem;
+    padding:2.4rem;
+}
+
+.info{
+    background-color: white;
+    border-left: 8px solid green;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem 3rem;
+    align-content: start;
+}
+
+.project-section h3{
+    margin: 0;
+}
+
+.share{
+    transform: rotate(-90deg);
+}
+
+.icons{
+    display: grid;
+    justify-content: right;
+    grid-template-columns: repeat(3, 0.2fr);
+    align-items: end;
+    margin-top: 20px;
 }
