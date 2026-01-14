@@ -105,9 +105,11 @@ input{
 }
 
 .header-img{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .btn{
@@ -168,4 +170,20 @@ input{
     grid-template-columns: repeat(3, 0.2fr);
     align-items: end;
     margin-top: 20px;
+}
+
+.announce{
+    background-color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-top: 4.5rem;
+    padding: 1.5rem;
+    width: 230px;
+    text-align: left;
+}
+
+hr{
+    color: rgba(210, 210, 210, 0.056);
+    width: 100%;
+    margin: 0 auto;
 }
