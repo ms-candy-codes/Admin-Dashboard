@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,20 +21,38 @@ html, body {
 }
 
 .side-bar{
-    background-color: pink;
+    background-color: palevioletred;
+    color: white;
     display: grid;
     grid-row: 1/4;
     grid-column: 1/2;
-    grid-template-rows: 1fr 3fr 4fr;
+    grid-template-rows: auto 3fr 4fr;
     padding: 0 20px;
 }
 
 .logo-container{
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo {
+    margin: 0; 
+    margin-top: 15px;      
+    font-size: 2rem;
+}
+
+.logo-container svg {
+    width: 32px;
+    height: 32px;
+    display: block;  
+    fill: white;
 }
 
 ul{
     list-style-type: none;
+    padding: 0;
 }
 
 li{
@@ -44,8 +65,16 @@ li{
     padding: 5px;
 }
 
+.special-case{
+    margin-top: 0;
+}
+
+.setting-container li{
+    padding: 15px;
+}
+
 .nav-bar{
-    background-color: palevioletred;
+    background-color: #fff5f1;
     display: grid;
     justify-content: space-between;
     grid-template-columns: 2.5fr 1fr;
@@ -77,6 +106,25 @@ svg{
     margin-top: 15px;
 }
 
+.side-bar svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: white;
+}
+
+.side-bar li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.side-bar .profile-container p{
+    margin-top: 35px;
+}
+
 input{
     width: 80%;
     padding: 10px;
@@ -93,7 +141,7 @@ input{
 }
 
 .header{
-    background-color: palevioletred;
+    background-color: #fff5f1;
     display: grid;
     grid-template-columns: 0.7fr 4fr 2fr;
     grid-row: 2/3;
@@ -125,12 +173,12 @@ input{
 }
 
 .article{
-    background-color: lightpink;
+    background-color: #ffe2ec;
     display: grid;
+    grid-template-columns: 2fr 1fr; /* left: projects, right: announcements/trends */
+    gap: 20px;
     grid-row: 3/4;
     grid-column: 2/3;
-    grid-template-columns: 3fr 1fr;
-    /* grid-template-rows: ; */
 }
 
 .project-section{
@@ -148,8 +196,8 @@ input{
 }
 
 .info{
-    background-color: white;
-    border-left: 8px solid green;
+    background-color: rgb(255, 255, 255);
+    border-left: 8px solid rgb(156, 0, 78);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem 3rem;
@@ -230,12 +278,12 @@ hr{
     font-size: 13px;
     margin: 0;
     padding: 0;
-    width: 150px;
+    width: 100px;
 }
 
 .names{
     font-size: 15px;
-    width: 150px;
+    width: 100px;
     margin: 0;
     padding: 0;
 }
